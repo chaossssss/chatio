@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>网页聊天</title>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="chat.js"></script>
+	<link rel="stylesheet" type="text/css" href="chat.css">
+	</head>
+	<body>
+		<div class="chat_header">在线聊天</div>
+ 		<div class="chatArea"> 
+			<div id="chat">
+				<ul id="message"></ul>
+			</div>
+ 		</div> 	
+ 			<div class="chatSender"> 		
+				<form id="form" class="chatForm">
+					<input type="text" id="input" maxlength="140" autocomplete="off" placeholder="请输入聊天内容" />
+					<button>发送信息</button>
+				</form>	
+			</div>
+	</body>
+</html>
